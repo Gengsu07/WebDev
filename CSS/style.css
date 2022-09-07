@@ -1,0 +1,40 @@
+
+body {
+    background-image: url(bromo.jpg);
+    background-size: cover;
+}
+
+header{
+    background-color: #9ca4bd ;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-inline-start: 10px;
+    }
+
+
+h2 {
+    color: red;
+    text-align: center;
+    border: 5px solid #9ca4bd;
+    display: inline-block;
+   }
+
+p {
+    color: white;
+    background-color: rgba(73, 109, 137,0.8);
+}
+
+.text{
+    text-align: justify;
+}
+
+#text1{
+    background-color: rgba(73, 109, 137,0.8);
+}
+#text2{
+    background-color: rgba(0, 102, 102,0.8);
+}
