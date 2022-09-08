@@ -21,11 +21,14 @@ h2 {
     text-align: center;
     border: 5px solid #9ca4bd;
     display: inline-block;
+    font-family: 'Montserrat', sans-serif;
    }
 
 p {
+    font-size: 12px;
     color: white;
     background-color: rgba(73, 109, 137,0.8);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .text{
@@ -39,6 +42,25 @@ p {
     background-color: rgba(0, 102, 102,0.8);
 }
 
-div p{
+img {
+    image-orientation: 'center';
+    float: left;
+}
+footer{
+    clear: 'both';
+    text-align: center;
+    font-style:normal;
+}
+
+.boxmodel {
+    border: 5px red solid;
+    display: inline-block;
+    padding: 0px 20px 0px 20px ;
+    margin: 0px 20px ;
+    width: 25px;
+    height: 25px;
+}
+/*specifity*/
+p{
     border: 5px solid pink;
 }

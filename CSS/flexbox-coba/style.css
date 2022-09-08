@@ -1,0 +1,29 @@
+img {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    transition: all 1s;
+}
+
+img:hover {
+   transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    font-family: Jazz LET , fantasy ;
+    font-size: 3em;
+    border-bottom: 2px solid pink;
+    text-align: center;
+    /* Untuk fitur experimental gunakan ini, terus sebutkan juga propertinya */
+    -moz-box-shadow :4px 4px 5px 5px #D46A6A;
+    -webkit-box-shadow :4px 4px 5px 5px #D46A6A;
+    -ms-box-shadow :4px 4px 5px 5px #D46A6A;
+    -o-box-shadow :4px 4px 5px 5px #D46A6A;
+    box-shadow: 4px 4px 5px 5px burlywood;
+}

@@ -1,0 +1,20 @@
+.em {
+    font-size: 3em;
+}
+
+.rem{
+    font-size: 5rem;
+}
+
+p{
+    color: aqua; 
+    
+}
+
+.boxmodel {
+    padding: 0px;
+}
+
+li{
+    list-style-type: square;
+}
