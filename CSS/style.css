@@ -38,3 +38,7 @@ p {
 #text2{
     background-color: rgba(0, 102, 102,0.8);
 }
+
+div p{
+    border: 5px solid pink;
+}
