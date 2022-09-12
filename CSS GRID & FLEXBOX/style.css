@@ -11,8 +11,12 @@
 .container {
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
   grid-template-rows: 1fr;
+}
+
+.red {
+  grid-column: 1/-1;
 }
 
 .zone:hover {
