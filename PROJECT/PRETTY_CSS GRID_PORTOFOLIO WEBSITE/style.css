@@ -1,25 +1,32 @@
 body {
   margin: 0;
+  font-family: "Segoe UI";
 }
 
 .main-nav {
   display: flex;
   list-style: none;
-  font-size: 0.7em;
+  font-size: 0.5em;
   margin: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .jumbotron {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30rem;
+  height: 70vh;
 }
 
 .grid-wrapper {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .box > img {
@@ -28,13 +35,13 @@ body {
 
 .box {
   background-color: #444;
-  padding: 120px;
-  margin: 20px;
+  padding: 80px;
+  margin: 10px;
 }
 
-/* .img {
-  background-size: cover;
-} */
+.cover {
+  width: 28rem;
+}
 
 .pushed {
   margin-left: auto;
@@ -76,6 +83,12 @@ footer {
     inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
 }
 
+.box:hover {
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -o-transform: rotate(7deg);
+  transform: rotate(7deg);
+}
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
  *  Green Background
