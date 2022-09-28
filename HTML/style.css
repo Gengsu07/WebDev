@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash");
+
+.judul {
+  overflow: hidden;
+  color: #ffff00; /* couleur du texte */
+  font-family: "Berkshire Swash", cursive;
+  text-align: center; /* alignement du texte */
+  font-size: 100px; /* taille du texte */
+  text-shadow: #2e2b32 1px 1px, #2e2b32 0px 0px, #2e2b32 1px 1px,
+    #2e2b32 2px 2px, #2e2b32 3px 3px, #2e2b32 4px 4px, #2e2b32 5px 5px,
+    #2e2b32 6px 6px, #2e2b32 7px 7px, #2e2b32 8px 8px, #2e2b32 9px 9px,
+    #2e2b32 10px 10px, #2e2b32 11px 11px, #2e2b32 12px 12px, #2e2b32 13px 13px,
+    #2e2b32 14px 14px, #2e2b32 15px 15px, #2e2b32 16px 16px, #2e2b32 17px 17px,
+    #2e2b32 18px 18px, #2e2b32 19px 19px, #2e2b32 20px 20px, #2e2b32 21px 21px,
+    #2e2b32 22px 22px, #2e2b32 23px 23px, #2e2b32 24px 24px, #2e2b32 25px 25px,
+    #2e2b32 26px 26px, #2e2b32 27px 27px, #2e2b32 28px 28px, #2e2b32 29px 29px;
+}
+
+.notexist {
+  list-style-type: none;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  text-decoration-color: antiquewhite;
+  color: white;
+}
+@import "compass/css3";
+
+body {
+  font-family: "Varela", sans-serif;
+}
+
+.glitch {
+  color: white;
+  font-size: 100px;
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+@keyframes noise-anim {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
+    }
+  }
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
+    }
+  }
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
