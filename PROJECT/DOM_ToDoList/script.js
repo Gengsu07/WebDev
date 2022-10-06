@@ -9,6 +9,7 @@ function inputLength() {
 function listElement() {
   var list = document.createElement("li");
   list.appendChild(document.createTextNode(todo.value));
+  list.className = "badge bg-primary text-wrap text-center";
   ul.appendChild(list);
   todo.value = "";
 }

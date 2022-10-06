@@ -4,17 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      type="text/css"
+    />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Gengsu's TODOLISt</title>
   </head>
-  <body>
+  <body class="mt-2 bg-light">
     <h1>My Todo List App</h1>
     <h3>What will you doing?</h3>
     <input id="input_todo" type="text" placeholder="Input Here" />
-    <button id="enter">Enter ToDO</button>
+    <button id="enter" type="button" class="btn btn-info">Enter ToDO</button>
     <ul>
-      <li>Morning Study 5 a.m</li>
-      <li>Come to Office 07.30</li>
+      <li class="badge bg-primary text-wrap text-center">
+        Morning Study 5 a.m
+      </li>
+      <li class="badge bg-primary text-wrap text-center">
+        Come to Office 07.30
+      </li>
     </ul>
     <script type="text/javascript" src="script.js"></script>
   </body>
