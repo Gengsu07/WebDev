@@ -59,4 +59,10 @@ export const robots = [
     username: "Moriah.Stanton",
     email: "Rey.Padberg@karina.biz",
   },
+  {
+    id: 11,
+    name: "Sugeng Wahyudi",
+    username: "Gengsu07",
+    email: "ahahaha@gmail.com",
+  },
 ];
