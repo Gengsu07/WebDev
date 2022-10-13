@@ -5,8 +5,8 @@ class ListClass extends Component {
     return (
       <div>
         <h1>ini dari Component ListClass dengan class</h1>
-        <h2>Nama:{this.props.objekprops.nama}</h2>
-        <h2>Club:{this.props.objekprops.club}</h2>
+        <h3>Nama:{this.props.objekprops.nama}</h3>
+        <h3>Club:{this.props.objekprops.club}</h3>
       </div>
     );
   }
