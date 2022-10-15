@@ -3,6 +3,7 @@ import "./App.css";
 import React, { Component } from "react";
 import FormInput from "./component/FormInput";
 import TodoList from "./component/ToDoList";
+import EditModal from "./component/EditModal";
 
 class App extends Component {
   constructor() {
@@ -56,6 +57,9 @@ class App extends Component {
               searchChange={this.FormInputOnType}
               add={this.ButtonAdd}
             />
+          </div>
+          <div className="editmodal">
+            <EditModal />
           </div>
         </div>
       </div>
